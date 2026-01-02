@@ -558,7 +558,7 @@
                     alert("User Logged in Successfully !");
                     document.getElementById('y').style.display = "none";
                     loginon = false;
-
+                    console.log(userdetails[current_user]);
                 }
                 else{
                     alert("Incorrect Passowrd");
@@ -579,6 +579,8 @@
                     document.getElementById("z-container").style.display = "none";
                     carton = false;
                     userdetails[current_user][3] = [];
+                    current_user = null;
+                    document.getElementById("tc").innerHTML = "";
                 },
                 refill : {
                     contact : "7893570611"
